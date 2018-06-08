@@ -63,6 +63,7 @@ plot_dim <- c(6,6)
 
 #### 2. Import files
 
+# You have to make sure that the files are all "tab" separated!! Otherwise, nothing will work!!(if you just copy paste this command, which by the way, YOU SHOULD NOT DO I)
 otu_tab <- read.table(otu_tab_file, header = TRUE, comment.char = "", sep = "\t")
 names(otu_tab)[1] <- "OTU"
 otu_tab[1:5,1:5]
